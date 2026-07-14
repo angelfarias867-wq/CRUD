@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Esto es una api la cual esta construida con **Node.js** y **Express**, la cual permite la gestion de cursos mediante las operaciones del c.r.u.d. (Crea, Leer, Actualizar y Eliminar),",
   "main": "app.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/angelfarias867-wq/CRUD/issues"
   },
-  "homepage": "https://github.com/angelfarias867-wq/CRUD#readme"
+  "homepage": "https://github.com/angelfarias867-wq/CRUD#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
 }
