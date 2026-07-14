@@ -9,7 +9,7 @@ let infoCursos = {
         },
         {
             id:2,
-            titulo: 'Aprende Python',
+            titulo: 'Python Intermedio',
             lenguaje: 'python',
             vistas: 15000,
             nivel: 'intermedio'

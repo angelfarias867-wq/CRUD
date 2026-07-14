@@ -1,13 +1,13 @@
 const express = require('express');
 const app = express();
 
-const { InfoCursos} = require('./datos/cursos.js');
+const { infoCursos } = require('./datos/cursos.js');
 
 //Routers
-const routerProgramacion = require('./routers/programacion.js');
+const routerProgramacion = require('./routers/programacion');
 app.use('/api/cursos/programacion', routerProgramacion);
 
-const routerMatematicas = require('./routers/matematicas.js');
+const routerMatematicas = require('./routers/matematicas');
 app.use('/api/cursos/matematicas', routerMatematicas);
 
 //Routing
@@ -16,7 +16,7 @@ app.get ('/', (req, res) => {
 });
 
 app.get('/api/cursos', (req, res) => {
-    res.send(JSON.stringify(InfoCursos));
+    res.send(JSON.stringify(infoCursos));
 });
 
 const PUERTO = process.env.PORT || 3000;
