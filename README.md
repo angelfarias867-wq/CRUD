@@ -5,5 +5,5 @@ Esto es una api la cual esta construida con **Node.js** y **Express**, la cual p
 # Istalacion
 1. Clonar este repositorio en tu computador
 2. Abrir la terminal estando en la carpeta del proyecto clonado
-3. Instalar las dependencias necesarias mediante "npm install"
-4. Iniciar el Servidor mediante "node app.js"
+3. Instalar las dependencias necesarias mediante **"npm install"**
+4. Iniciar el Servidor mediante **"node app.js"**
