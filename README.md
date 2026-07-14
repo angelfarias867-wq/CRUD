@@ -26,14 +26,14 @@ Esto es una api la cual esta construida con **Node.js** y **Express**, la cual p
 ### GET (Obtener)
 `GET http://localhost:3000/api/courses/programming?sort=views`
 
-### POST (Create course)
+### POST (Crear Curso)
 `POST http://localhost:3000/api/courses/programming`
 
-### PUT (Modify course in its entirety)
+### PUT (Cambio del Curso por completo)
 `PUT http://localhost:3000/api/courses/mathematics/2`
 
-### PATCH (Update course partially)
+### PATCH (Cambios Detallados del Curso)
 `PATCH http://localhost:3000/api/courses/programming/1`
 
-### DELETE (Delete course)
+### DELETE (Eliminar Curso)
 `DELETE http://localhost:3000/api/courses/mathematics/5`
