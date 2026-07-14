@@ -23,40 +23,17 @@ Esto es una api la cual esta construida con **Node.js** y **Express**, la cual p
 | **DELETE** | `/:id` | Elimina un curso del registro basándose en su ID. | **Error:** `404` si el ID no existe. |
 
 ## Ejemplos de Solicitudes
-
+### GET (Obtener)
 `GET http://localhost:3000/api/courses/programming?sort=views`
-
-### DELETE (Delete course)
-`DELETE http://localhost:3000/api/courses/mathematics/5`
 
 ### POST (Create course)
 `POST http://localhost:3000/api/courses/programming`
-```json
-{
-  "id": 8,
-  "title": "Learn TailwindCSS",
-  "language": "css",
-  "views": 25000,
-  "level": "beginner"
-}
-```
 
 ### PUT (Modify course in its entirety)
 `PUT http://localhost:3000/api/courses/mathematics/2`
-```json
-{
-  "id": 2,
-  "titulo": "Calculus pt.6",
-  "tema": "calculus",
-  "vistas": 543932,
-  "nivel": "advanced"
-}
-```
 
 ### PATCH (Update course partially)
 `PATCH http://localhost:3000/api/courses/programming/1`
-```json
-{
-  "vistas": 85000
-}
-```
+
+### DELETE (Delete course)
+`DELETE http://localhost:3000/api/courses/mathematics/5`
