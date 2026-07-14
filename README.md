@@ -9,8 +9,8 @@ Esto es una api la cual esta construida con **Node.js** y **Express**, la cual p
 4. Iniciar el Servidor mediante **"node app.js"**
 
 # Endpoints Utilizados
-**Base URL Programacion:** `/api/cursos/programacion`
-**Base URL Matematicas:** `/api/cursos/matematicas`
+1. **Base URL Programacion:** `/api/cursos/programacion`
+2. **Base URL Matematicas:** `/api/cursos/matematicas`
 
 | Método | Endpoint | Descripción | Requisitos y Respuestas |
 | :--- | :--- | :--- | :--- |
