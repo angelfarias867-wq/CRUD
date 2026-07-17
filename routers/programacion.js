@@ -3,13 +3,13 @@ const routerProgramacion = express.Router();
 const { infoCursos } = require("../datos/cursos.js");
 const programacion = infoCursos.programacion;
 
-
 //Middleware 
 routerProgramacion.use(express.json());
 
 routerProgramacion.get('/', (req, res) => {
     res.send(JSON.stringify(programacion));
 });
+
  //GET
 routerProgramacion.get('/:lenguaje', (req, res) => {
     const lenguaje = req.params.lenguaje;
@@ -17,8 +17,7 @@ routerProgramacion.get('/:lenguaje', (req, res) => {
     if (resultado.length === 0) {
         return res.status(404).send(`No se encontraron cursos de ${lenguaje}`);
     }
-    
-    if (req.query.ordenar === 'vistas') {
+    else if (req.query.ordenar === 'vistas') {
         return res.send(JSON.stringify(resultado.sort((a, b) => b.vistas - a.vistas)));
     }
 
@@ -46,7 +45,6 @@ routerProgramacion.post('/', (req, res) => {
 routerProgramacion.put('/:id', (req, res) => {
     const cursoActualizado = req.body;
     const id = req.params.id;
-
     const indice = programacion.findIndex(curso => curso.id == id);
     if (indice >= 0) {
         programacion[indice]=cursoActualizado;
